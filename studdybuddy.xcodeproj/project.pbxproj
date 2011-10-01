@@ -14,6 +14,15 @@
 		2FFAB1A2143792A600E5A003 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1A1143792A600E5A003 /* main.m */; };
 		2FFAB1A6143792A600E5A003 /* studdybuddyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1A5143792A600E5A003 /* studdybuddyAppDelegate.m */; };
 		2FFAB1A9143792A600E5A003 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFAB1A7143792A600E5A003 /* MainWindow.xib */; };
+		2FFAB1B6143793AC00E5A003 /* ClassesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1B5143793AC00E5A003 /* ClassesViewController.m */; };
+		2FFAB1BC143796BB00E5A003 /* BuddiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1BB143796BB00E5A003 /* BuddiesViewController.m */; };
+		2FFAB1C31437974500E5A003 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1C11437974500E5A003 /* ProfileViewController.m */; };
+		2FFAB1C41437974500E5A003 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFAB1C21437974500E5A003 /* ProfileViewController.xib */; };
+		2FFAB1C814379E3000E5A003 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1C714379E3000E5A003 /* User.m */; };
+		2FFAB1CB14379E6B00E5A003 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1CA14379E6B00E5A003 /* Course.m */; };
+		2FFAB1CE1437A08000E5A003 /* Me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FFAB1CD1437A08000E5A003 /* Me.jpg */; };
+		2FFAB1D21437A64300E5A003 /* StuddyBuddyServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1D11437A64300E5A003 /* StuddyBuddyServer.m */; };
+		2FFAB1D51437AD5A00E5A003 /* BuddyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1D41437AD5A00E5A003 /* BuddyRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +30,29 @@
 		2FFAB195143792A600E5A003 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2FFAB197143792A600E5A003 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2FFAB199143792A600E5A003 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2FFAB19D143792A600E5A003 /* studdybuddy-Info.plist */ = {isa = PBXFileReference; path = "studdybuddy-Info.plist"; sourceTree = "<group>"; };
+		2FFAB19D143792A600E5A003 /* studdybuddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "studdybuddy-Info.plist"; sourceTree = "<group>"; };
 		2FFAB19F143792A600E5A003 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2FFAB1A1143792A600E5A003 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2FFAB1A3143792A600E5A003 /* studdybuddy-Prefix.pch */ = {isa = PBXFileReference; path = "studdybuddy-Prefix.pch"; sourceTree = "<group>"; };
-		2FFAB1A4143792A600E5A003 /* studdybuddyAppDelegate.h */ = {isa = PBXFileReference; path = studdybuddyAppDelegate.h; sourceTree = "<group>"; };
+		2FFAB1A3143792A600E5A003 /* studdybuddy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "studdybuddy-Prefix.pch"; sourceTree = "<group>"; };
+		2FFAB1A4143792A600E5A003 /* studdybuddyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = studdybuddyAppDelegate.h; sourceTree = "<group>"; };
 		2FFAB1A5143792A600E5A003 /* studdybuddyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = studdybuddyAppDelegate.m; sourceTree = "<group>"; };
 		2FFAB1A8143792A600E5A003 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2FFAB1B4143793AC00E5A003 /* ClassesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassesViewController.h; path = "View Controllers/ClassesViewController.h"; sourceTree = "<group>"; };
+		2FFAB1B5143793AC00E5A003 /* ClassesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassesViewController.m; path = "View Controllers/ClassesViewController.m"; sourceTree = "<group>"; };
+		2FFAB1BA143796BB00E5A003 /* BuddiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuddiesViewController.h; path = "View Controllers/BuddiesViewController.h"; sourceTree = "<group>"; };
+		2FFAB1BB143796BB00E5A003 /* BuddiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuddiesViewController.m; path = "View Controllers/BuddiesViewController.m"; sourceTree = "<group>"; };
+		2FFAB1C01437974500E5A003 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = "View Controllers/ProfileViewController.h"; sourceTree = "<group>"; };
+		2FFAB1C11437974500E5A003 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = "View Controllers/ProfileViewController.m"; sourceTree = "<group>"; };
+		2FFAB1C21437974500E5A003 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileViewController.xib; path = "View Controllers/ProfileViewController.xib"; sourceTree = "<group>"; };
+		2FFAB1C614379E3000E5A003 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Models/User.h; sourceTree = "<group>"; };
+		2FFAB1C714379E3000E5A003 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Models/User.m; sourceTree = "<group>"; };
+		2FFAB1C914379E6B00E5A003 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Course.h; path = Models/Course.h; sourceTree = "<group>"; };
+		2FFAB1CA14379E6B00E5A003 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Course.m; path = Models/Course.m; sourceTree = "<group>"; };
+		2FFAB1CD1437A08000E5A003 /* Me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Me.jpg; path = Images/Me.jpg; sourceTree = "<group>"; };
+		2FFAB1D01437A64300E5A003 /* StuddyBuddyServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StuddyBuddyServer.h; path = Server/StuddyBuddyServer.h; sourceTree = "<group>"; };
+		2FFAB1D11437A64300E5A003 /* StuddyBuddyServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StuddyBuddyServer.m; path = Server/StuddyBuddyServer.m; sourceTree = "<group>"; };
+		2FFAB1D31437AD5A00E5A003 /* BuddyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuddyRequest.h; path = Models/BuddyRequest.h; sourceTree = "<group>"; };
+		2FFAB1D41437AD5A00E5A003 /* BuddyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuddyRequest.m; path = Models/BuddyRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +99,11 @@
 		2FFAB19B143792A600E5A003 /* studdybuddy */ = {
 			isa = PBXGroup;
 			children = (
+				2FFAB1D61437B51E00E5A003 /* Views */,
+				2FFAB1CF1437A60E00E5A003 /* Server */,
+				2FFAB1CC1437A03700E5A003 /* Images */,
+				2FFAB1C514379DE300E5A003 /* Models */,
+				2FFAB1B31437935000E5A003 /* View Controllers */,
 				2FFAB1A4143792A600E5A003 /* studdybuddyAppDelegate.h */,
 				2FFAB1A5143792A600E5A003 /* studdybuddyAppDelegate.m */,
 				2FFAB1A7143792A600E5A003 /* MainWindow.xib */,
@@ -91,6 +121,57 @@
 				2FFAB1A3143792A600E5A003 /* studdybuddy-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FFAB1B31437935000E5A003 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2FFAB1B4143793AC00E5A003 /* ClassesViewController.h */,
+				2FFAB1B5143793AC00E5A003 /* ClassesViewController.m */,
+				2FFAB1BA143796BB00E5A003 /* BuddiesViewController.h */,
+				2FFAB1BB143796BB00E5A003 /* BuddiesViewController.m */,
+				2FFAB1C01437974500E5A003 /* ProfileViewController.h */,
+				2FFAB1C11437974500E5A003 /* ProfileViewController.m */,
+				2FFAB1C21437974500E5A003 /* ProfileViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2FFAB1C514379DE300E5A003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FFAB1C614379E3000E5A003 /* User.h */,
+				2FFAB1C714379E3000E5A003 /* User.m */,
+				2FFAB1C914379E6B00E5A003 /* Course.h */,
+				2FFAB1CA14379E6B00E5A003 /* Course.m */,
+				2FFAB1D31437AD5A00E5A003 /* BuddyRequest.h */,
+				2FFAB1D41437AD5A00E5A003 /* BuddyRequest.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2FFAB1CC1437A03700E5A003 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2FFAB1CD1437A08000E5A003 /* Me.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		2FFAB1CF1437A60E00E5A003 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				2FFAB1D01437A64300E5A003 /* StuddyBuddyServer.h */,
+				2FFAB1D11437A64300E5A003 /* StuddyBuddyServer.m */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		2FFAB1D61437B51E00E5A003 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +223,8 @@
 			files = (
 				2FFAB1A0143792A600E5A003 /* InfoPlist.strings in Resources */,
 				2FFAB1A9143792A600E5A003 /* MainWindow.xib in Resources */,
+				2FFAB1C41437974500E5A003 /* ProfileViewController.xib in Resources */,
+				2FFAB1CE1437A08000E5A003 /* Me.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +237,13 @@
 			files = (
 				2FFAB1A2143792A600E5A003 /* main.m in Sources */,
 				2FFAB1A6143792A600E5A003 /* studdybuddyAppDelegate.m in Sources */,
+				2FFAB1B6143793AC00E5A003 /* ClassesViewController.m in Sources */,
+				2FFAB1BC143796BB00E5A003 /* BuddiesViewController.m in Sources */,
+				2FFAB1C31437974500E5A003 /* ProfileViewController.m in Sources */,
+				2FFAB1C814379E3000E5A003 /* User.m in Sources */,
+				2FFAB1CB14379E6B00E5A003 /* Course.m in Sources */,
+				2FFAB1D21437A64300E5A003 /* StuddyBuddyServer.m in Sources */,
+				2FFAB1D51437AD5A00E5A003 /* BuddyRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
