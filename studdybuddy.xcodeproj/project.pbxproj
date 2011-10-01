@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FFAB196143792A600E5A003 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFAB195143792A600E5A003 /* UIKit.framework */; };
+		2FFAB198143792A600E5A003 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFAB197143792A600E5A003 /* Foundation.framework */; };
+		2FFAB19A143792A600E5A003 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFAB199143792A600E5A003 /* CoreGraphics.framework */; };
+		2FFAB1A0143792A600E5A003 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FFAB19E143792A600E5A003 /* InfoPlist.strings */; };
+		2FFAB1A2143792A600E5A003 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1A1143792A600E5A003 /* main.m */; };
+		2FFAB1A6143792A600E5A003 /* studdybuddyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFAB1A5143792A600E5A003 /* studdybuddyAppDelegate.m */; };
+		2FFAB1A9143792A600E5A003 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFAB1A7143792A600E5A003 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FFAB191143792A600E5A003 /* studdybuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studdybuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FFAB195143792A600E5A003 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2FFAB197143792A600E5A003 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2FFAB199143792A600E5A003 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2FFAB19D143792A600E5A003 /* studdybuddy-Info.plist */ = {isa = PBXFileReference; path = "studdybuddy-Info.plist"; sourceTree = "<group>"; };
+		2FFAB19F143792A600E5A003 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2FFAB1A1143792A600E5A003 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FFAB1A3143792A600E5A003 /* studdybuddy-Prefix.pch */ = {isa = PBXFileReference; path = "studdybuddy-Prefix.pch"; sourceTree = "<group>"; };
+		2FFAB1A4143792A600E5A003 /* studdybuddyAppDelegate.h */ = {isa = PBXFileReference; path = studdybuddyAppDelegate.h; sourceTree = "<group>"; };
+		2FFAB1A5143792A600E5A003 /* studdybuddyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = studdybuddyAppDelegate.m; sourceTree = "<group>"; };
+		2FFAB1A8143792A600E5A003 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FFAB18E143792A600E5A003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FFAB196143792A600E5A003 /* UIKit.framework in Frameworks */,
+				2FFAB198143792A600E5A003 /* Foundation.framework in Frameworks */,
+				2FFAB19A143792A600E5A003 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FFAB186143792A600E5A003 = {
+			isa = PBXGroup;
+			children = (
+				2FFAB19B143792A600E5A003 /* studdybuddy */,
+				2FFAB194143792A600E5A003 /* Frameworks */,
+				2FFAB192143792A600E5A003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FFAB192143792A600E5A003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FFAB191143792A600E5A003 /* studdybuddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FFAB194143792A600E5A003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FFAB195143792A600E5A003 /* UIKit.framework */,
+				2FFAB197143792A600E5A003 /* Foundation.framework */,
+				2FFAB199143792A600E5A003 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FFAB19B143792A600E5A003 /* studdybuddy */ = {
+			isa = PBXGroup;
+			children = (
+				2FFAB1A4143792A600E5A003 /* studdybuddyAppDelegate.h */,
+				2FFAB1A5143792A600E5A003 /* studdybuddyAppDelegate.m */,
+				2FFAB1A7143792A600E5A003 /* MainWindow.xib */,
+				2FFAB19C143792A600E5A003 /* Supporting Files */,
+			);
+			path = studdybuddy;
+			sourceTree = "<group>";
+		};
+		2FFAB19C143792A600E5A003 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FFAB19D143792A600E5A003 /* studdybuddy-Info.plist */,
+				2FFAB19E143792A600E5A003 /* InfoPlist.strings */,
+				2FFAB1A1143792A600E5A003 /* main.m */,
+				2FFAB1A3143792A600E5A003 /* studdybuddy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FFAB190143792A600E5A003 /* studdybuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FFAB1AC143792A600E5A003 /* Build configuration list for PBXNativeTarget "studdybuddy" */;
+			buildPhases = (
+				2FFAB18D143792A600E5A003 /* Sources */,
+				2FFAB18E143792A600E5A003 /* Frameworks */,
+				2FFAB18F143792A600E5A003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = studdybuddy;
+			productName = studdybuddy;
+			productReference = 2FFAB191143792A600E5A003 /* studdybuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FFAB188143792A600E5A003 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2FFAB18B143792A600E5A003 /* Build configuration list for PBXProject "studdybuddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2FFAB186143792A600E5A003;
+			productRefGroup = 2FFAB192143792A600E5A003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FFAB190143792A600E5A003 /* studdybuddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FFAB18F143792A600E5A003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FFAB1A0143792A600E5A003 /* InfoPlist.strings in Resources */,
+				2FFAB1A9143792A600E5A003 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FFAB18D143792A600E5A003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FFAB1A2143792A600E5A003 /* main.m in Sources */,
+				2FFAB1A6143792A600E5A003 /* studdybuddyAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FFAB19E143792A600E5A003 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FFAB19F143792A600E5A003 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2FFAB1A7143792A600E5A003 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FFAB1A8143792A600E5A003 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FFAB1AA143792A600E5A003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2FFAB1AB143792A600E5A003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FFAB1AD143792A600E5A003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "studdybuddy/studdybuddy-Prefix.pch";
+				INFOPLIST_FILE = "studdybuddy/studdybuddy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2FFAB1AE143792A600E5A003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "studdybuddy/studdybuddy-Prefix.pch";
+				INFOPLIST_FILE = "studdybuddy/studdybuddy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FFAB18B143792A600E5A003 /* Build configuration list for PBXProject "studdybuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFAB1AA143792A600E5A003 /* Debug */,
+				2FFAB1AB143792A600E5A003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFAB1AC143792A600E5A003 /* Build configuration list for PBXNativeTarget "studdybuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFAB1AD143792A600E5A003 /* Debug */,
+				2FFAB1AE143792A600E5A003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FFAB188143792A600E5A003 /* Project object */;
+}
