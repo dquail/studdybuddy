@@ -45,8 +45,19 @@ StuddyBuddyServer *_server;
                         [[[Course alloc] initWithCourseId:@"3" 
                                                   andName:@"CS402" 
                                            andDescription:@"Data structures" 
-                                                 andNotes:@""] autorelease],                        
-                        
+                                                 andNotes:@""] autorelease],      
+                         [[[Course alloc] initWithCourseId:@"4" 
+                                                   andName:@"ENG122" 
+                                            andDescription:@"English studies" 
+                                                  andNotes:@""] autorelease],
+                         [[[Course alloc] initWithCourseId:@"5" 
+                                                   andName:@"ENG144" 
+                                            andDescription:@"Shakespear" 
+                                                  andNotes:@""] autorelease],                        
+                         [[[Course alloc] initWithCourseId:@"6" 
+                                                   andName:@"ENG245" 
+                                            andDescription:@"Writing in 1800s" 
+                                                  andNotes:@""] autorelease],                              
                          nil] autorelease];
     return classes;
     

@@ -114,7 +114,9 @@
     
     cell.textLabel.text = buddy.name;
     cell.detailTextLabel.text = buddy.email;
-    
+    //TODO - Use a real image
+    NSString *imageName = [NSString stringWithFormat:@"%d.jpg", indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:imageName];
     return cell;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {

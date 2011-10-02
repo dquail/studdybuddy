@@ -115,24 +115,25 @@
     profileController.user = david;
     UINavigationController *profileNavigationController = [[[UINavigationController alloc]
                                                             initWithRootViewController:profileController] autorelease];
-    profileNavigationController.tabBarItem = [[[UITabBarItem alloc]
-                                               initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:1] autorelease];
+    profileNavigationController.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"Me"
+                                                                            image:[UIImage imageNamed:@"icon_profile.png"] tag:1] autorelease];     
+    
     //Classes 
     ClassesViewController *classesController = [[[ClassesViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
     
     UINavigationController *classesNavigationController = [[[UINavigationController alloc] 
                                                             initWithRootViewController:classesController] autorelease];
     
-    classesNavigationController.tabBarItem = [[[UITabBarItem alloc] 
-                                               initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:2] autorelease];
+    classesNavigationController.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"Classes"
+                                                                            image:[UIImage imageNamed:@"icon_school.png"] tag:2] autorelease];     
     
     //Buddies
     BuddiesViewController *buddiesController = [[[BuddiesViewController alloc]
                                                  initWithStyle:UITableViewStylePlain] autorelease];
     UINavigationController *buddiesNavigationController = [[[UINavigationController alloc]
                                                             initWithRootViewController:buddiesController] autorelease];
-    buddiesNavigationController.tabBarItem = [[[UITabBarItem alloc]
-                                               initWithTabBarSystemItem:UITabBarSystemItemContacts tag:3] autorelease];
+    buddiesNavigationController.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"Matches"
+                                                                            image:[UIImage imageNamed:@"icon_buddies    .png"] tag:3] autorelease];     
     
     //Tab bar
     UITabBarController *tabBarController = [[[UITabBarController alloc] init] autorelease];
