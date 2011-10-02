@@ -13,14 +13,17 @@
 @synthesize name = _name;
 @synthesize university = _university;
 @synthesize email = _email;
+@synthesize image = _image;
+@synthesize userDescription = _description;
 
-- (id) initWithId:(NSString *)studentId andName:(NSString *)name andEmail:(NSString *)email andUniversity:(NSString *)university{
+- (id) initWithId:(NSString *)studentId andName:(NSString *)name andDescription:(NSString *)description andEmail:(NSString *)email andUniversity:(NSString *)university{
     self = [self init];
     if (self){
         _studentId = [studentId retain];
         _name = [name retain];
         _university = [university retain];
-        _email = email;
+        _email = [email retain];
+        _description = [description retain];
     }
     return self;
 }
@@ -40,6 +43,7 @@
     self.name = nil;
     self.university = nil;
     self.email = nil;
+    self.userDescription = nil;
     [super dealloc];
 }
 

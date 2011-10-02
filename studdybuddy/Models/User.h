@@ -12,14 +12,19 @@
     NSString *_studentId;
     NSString *_name;
     NSString *_university;
+    NSString *_description;
     NSString *_email;
+    //TODO - Use an image url
+    UIImage *_image;
 }
 
 @property (nonatomic, retain) NSString *studentId;
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *university;
+@property (nonatomic, retain) NSString *userDescription;
 @property (nonatomic, retain) NSString *email;
+@property (nonatomic, retain) UIImage *image;
 
-- (id) initWithId:(NSString *)studentId andName:(NSString *)name andEmail:(NSString *)email andUniversity:(NSString *)university;
+- (id) initWithId:(NSString *)studentId andName:(NSString *)name andDescription:(NSString *)description andEmail:(NSString *)email andUniversity:(NSString *)university;
 
 @end

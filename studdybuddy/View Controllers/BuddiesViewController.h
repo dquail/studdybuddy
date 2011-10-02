@@ -10,8 +10,10 @@
 
 @interface BuddiesViewController : UITableViewController{
     NSArray *_buddies;
+    NSArray *_matchedBuddies;
 }
 
 @property (nonatomic, retain) NSArray *buddies;
+@property (nonatomic, retain) NSArray *matchedBuddies;
 
 @end

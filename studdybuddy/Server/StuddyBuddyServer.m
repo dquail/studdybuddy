@@ -52,26 +52,40 @@ StuddyBuddyServer *_server;
     
 }
 
+- (NSArray *) getMatchedBuddies:(Course *)course{
+    //TODO - Return actual buddies from server for actual course
+    NSArray *buddies = [[[NSArray alloc] initWithObjects:
+                       [[[User alloc] initWithId:@"1" andName:@"Kanye West" andDescription:@"I love rap, hip hop and signing.  Also a bit of a math nerd" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],
+                       [[[User alloc] initWithId:@"2" andName:@"Jason Woo" andDescription:@"Javascript is evil.  Looking for someone who understands it best.  I'm great at C++" andEmail:@"jwoo@gmail.com" andUniversity:@"Washington State"] autorelease],
+                       [[[User alloc] initWithId:@"3" andName:@"Phillipe Leak" andDescription:@"Ive been working on computers for several years now.  Very strong technically.  Great calculus.  Like to have fun" andEmail:@"phillipe@leak.com" andUniversity:@"Washington State"] autorelease],
+                       nil] autorelease];
+    return buddies;
+}
+
 - (NSArray *) getBuddiesForClass:(Course *)course{
     //TODO - Return actual buddies from server for actual course
     NSArray *buddies;
     
     if (course == nil){
+        //Return matches
         buddies = [[[NSArray alloc] initWithObjects:
-                    [[[User alloc] initWithId:@"1" andName:@"Kanye West" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],
-                   [[[User alloc] initWithId:@"2" andName:@"Jason Woo" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],
-                   [[[User alloc] initWithId:@"3" andName:@"Phillipe Leak" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],
-                   nil] autorelease];
+            [[[User alloc] initWithId:@"1" andName:@"Kent Reiffershied" andDescription:@"I'm a skateboarder and ride bikes" andEmail:@"kent@gulllakemail.com" andUniversity:@"Washington State"] autorelease],
+            [[[User alloc] initWithId:@"2" andName:@"Abbie Connick" andDescription:@"I'm a huge fan of ultimate frisbee.  Woot woot" andEmail:@"acconnick@gmail.com" andUniversity:@"Washington State"] autorelease],
+            [[[User alloc] initWithId:@"3" andName:@"Trent Reznor" andDescription:@"I love my music.  The heavier the better.  I'm currently studying and going after my masters in music education" andEmail:@"trent@nin.com" andUniversity:@"Washington State"] autorelease],
+                    [[[User alloc] initWithId:@"1" andName:@"Kanye West" andDescription:@"I love rap, hip hop and signing.  Also a bit of a math nerd" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],
+                    [[[User alloc] initWithId:@"2" andName:@"Jason Woo" andDescription:@"Javascript is evil.  Looking for someone who understands it best.  I'm great at C++" andEmail:@"jwoo@gmail.com" andUniversity:@"Washington State"] autorelease],
+                    [[[User alloc] initWithId:@"3" andName:@"Phillipe Leak" andDescription:@"Ive been working on computers for several years now.  Very strong technically.  Great calculus.  Like to have fun" andEmail:@"phillipe@leak.com" andUniversity:@"Washington State"] autorelease],                    
+                    nil] autorelease];
     }
     
     else{
         buddies = [[[NSArray alloc] initWithObjects:
-                    [[[User alloc] initWithId:@"1" andName:@"Kendra Court" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],
-                    [[[User alloc] initWithId:@"2" andName:@"Jason Kendall" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],
-                    [[[User alloc] initWithId:@"3" andName:@"Clint Nelson" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],
-                    [[[User alloc] initWithId:@"4" andName:@"Jason Fenwick" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],                    
-                    [[[User alloc] initWithId:@"5" andName:@"Steve Small" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],                        
-                    [[[User alloc] initWithId:@"6" andName:@"Trisha Wolfater" andEmail:@"kanye@yahoo.com" andUniversity:@"Washington State"] autorelease],                                            
+                    [[[User alloc] initWithId:@"1" andName:@"Kendra Court" andDescription:@"Im a big sports nut.  Also really like to study.  Looking for someone similar" andEmail:@"kendra@court.com" andUniversity:@"Washington State"] autorelease],
+                    [[[User alloc] initWithId:@"2" andName:@"Jason Kendall" andDescription:@"First time at university.  Good and fun studier" andEmail:@"jason.kendall@gmail.com" andUniversity:@"Washington State"] autorelease],
+                    [[[User alloc] initWithId:@"3" andName:@"Clint Nelson" andDescription:@"Good student, but relaxed too.  Have fun stdying with me!" andEmail:@"clint.nelson@kpmg.com" andUniversity:@"Washington State"] autorelease],
+                    [[[User alloc] initWithId:@"4" andName:@"Jason Fenwick" andDescription:@"I like building things with computers" andEmail:@"jason_fenwick@yahoo.com" andUniversity:@"Washington State"] autorelease],                    
+                    [[[User alloc] initWithId:@"5" andName:@"Steve Small" andDescription:@"Huge Mariners fan.  Really strong in math.  Not so much in English" andEmail:@"steve21e@yahoo.com" andUniversity:@"Washington State"] autorelease],                        
+                    [[[User alloc] initWithId:@"6" andName:@"Trisha Wolfater" andDescription:@"I'm so smart I'm wicked" andEmail:@"trishawolfater@yahoo.com" andUniversity:@"Washington State"] autorelease],                                            
                     nil] autorelease];    }
     
     return buddies;
@@ -79,7 +93,7 @@ StuddyBuddyServer *_server;
 
 - (User *) getCurrentUser{
     //TODO - REturn actual Users from the server
-    User *user = [[[User alloc] initWithId:@"1" andName:@"David Quail" andEmail:@"dquail@hotmail.com" andUniversity:@"University of Regina"] autorelease];
+    User *user = [[[User alloc] initWithId:@"1" andName:@"David Quail" andDescription:@"I'm a 4th year computer science student.  I'm looking for a serious study partner, but also one that doesn't take things too seriously.  Beer is good too." andEmail:@"dquail@hotmail.com" andUniversity:@"University of Regina"] autorelease];
     return user;
     
 }

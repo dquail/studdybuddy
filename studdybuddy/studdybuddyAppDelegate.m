@@ -107,6 +107,12 @@
     //Profile
     ProfileViewController *profileController = [[[ProfileViewController alloc] 
                                                  initWithNibName:nil bundle:nil] autorelease];
+    //TODO - Use the real logged in user
+    User *david = [[[User alloc] 
+                    initWithId:@"1" andName:@"David Quail" andDescription:@"I'm a 4th year computer science student.  I'm looking for a serious study partner, but also one that doesn't take things too seriously.  Beer is good too. "
+                    andEmail:@"dquail@hotmail.com" andUniversity:@"University of Regina"]autorelease];
+    david.image = [[UIImage imageNamed:@"Me.jpg"] autorelease];
+    profileController.user = david;
     UINavigationController *profileNavigationController = [[[UINavigationController alloc]
                                                             initWithRootViewController:profileController] autorelease];
     profileNavigationController.tabBarItem = [[[UITabBarItem alloc]

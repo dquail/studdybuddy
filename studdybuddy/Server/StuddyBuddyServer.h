@@ -14,6 +14,7 @@
 
 - (NSArray *) getClasses;
 - (NSArray *) getBuddiesForClass:(Course *)course;
+- (NSArray *) getMatchedBuddies:(Course *)course;
 - (User *) getCurrentUser;
 
 + (StuddyBuddyServer *) server;

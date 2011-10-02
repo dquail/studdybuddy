@@ -9,6 +9,7 @@
 #import "ClassesViewController.h"
 #import "StuddyBuddyServer.h"
 #import "Course.h"
+#import "BuddiesViewController.h"
 
 @implementation ClassesViewController
 
@@ -16,7 +17,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        self.title = @"Classes";
+        self.title = @"Courses";
     }
     return self;
 }
@@ -146,14 +147,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    Course *course = [_classes objectAtIndex:indexPath.row];
+    BuddiesViewController *buddiesViewController = [[[BuddiesViewController alloc]
+                                                     initWithStyle:UITableViewStylePlain] autorelease];
+    //TODO - Do this async
+    buddiesViewController.buddies = [[StuddyBuddyServer server] getBuddiesForClass:course];
+    buddiesViewController.matchedBuddies = [[StuddyBuddyServer server] getMatchedBuddies:course];
+    buddiesViewController.title = course.name;
+    
+    [self.navigationController pushViewController:buddiesViewController animated:YES];
+    
 }
 
 - (void) dealloc{

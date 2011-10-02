@@ -9,10 +9,12 @@
 #import "BuddiesViewController.h"
 #import "StuddyBuddyServer.h"
 #import "User.h"
+#import "ProfileViewController.h"
 
 @implementation BuddiesViewController
 
 @synthesize buddies = _buddies;
+@synthesize matchedBuddies = _matchedBuddies;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -38,7 +40,7 @@
     [super viewDidLoad];
 
     //TODO - Load async
-    _buddies = [[[StuddyBuddyServer server] getBuddiesForClass:nil] retain];
+    _matchedBuddies = [[[StuddyBuddyServer server] getBuddiesForClass:nil] retain];
 }
 
 - (void)viewDidUnload
@@ -78,16 +80,19 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 1;
+   // Return the number of sections.
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [_buddies count];
+    if (section == 0){
+        return [_matchedBuddies count];
+    }
+    else {
+        return [_buddies count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -99,14 +104,28 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    User *buddy = [_buddies objectAtIndex:indexPath.row];
+    User *buddy;
+    if (indexPath.section == 0){
+        buddy = [_matchedBuddies objectAtIndex:indexPath.row];
+    }
+    else{
+        buddy = [_buddies objectAtIndex:indexPath.row];
+    }
     
     cell.textLabel.text = buddy.name;
     cell.detailTextLabel.text = buddy.email;
     
     return cell;
 }
-
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section==0) {
+        return @"My study partners";
+    } else if (section==1) {
+        return @"Other people looking to study";
+    }
+    
+    return @"";
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -150,14 +169,32 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    User *user = [_buddies objectAtIndex:indexPath.row];
+    ProfileViewController *profileController = [[[ProfileViewController alloc] 
+                                                 initWithNibName:nil bundle:nil] autorelease];
+    
+    UIImage *image;
+    //TODO - Use a real image
+    if (indexPath.row < 10){
+        NSString *imageName = [NSString stringWithFormat:@"%d.jpg", indexPath.row];
+        user.image = [UIImage imageNamed:imageName];
+    }
+    if (nil == image){
+        user.image = [[UIImage imageNamed:@"JaneDoe.jpg"] autorelease];
+    }
+    profileController.user = user;
+    
+    if (indexPath.section == 1){
+        //user can invite
+        profileController.inviteEnabled = YES;
+    }
+    else{
+        profileController.inviteButton.enabled = NO;
+    }
+    [self.navigationController pushViewController:profileController animated:YES];
+    
+    profileController.title = user.name;
+    
 }
 
 @end
