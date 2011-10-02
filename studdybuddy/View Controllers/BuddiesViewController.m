@@ -178,7 +178,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    User *user = [_buddies objectAtIndex:indexPath.row];
+    User *user;
+    if (indexPath.section== 0){
+        user = [_matchedBuddies objectAtIndex:indexPath.row];
+    }
+    else{
+        user = [_buddies objectAtIndex:indexPath.row];
+    }
     ProfileViewController *profileController = [[[ProfileViewController alloc] 
                                                  initWithNibName:nil bundle:nil] autorelease];
     

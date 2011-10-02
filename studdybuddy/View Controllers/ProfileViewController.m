@@ -70,6 +70,7 @@
         }
         self.inviteButton.hidden = YES;
     }
+    
 }
 
 - (void)viewDidUnload

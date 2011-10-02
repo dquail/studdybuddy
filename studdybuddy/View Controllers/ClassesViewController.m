@@ -17,7 +17,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        self.title = @"Courses";
+        self.title = @"My Courses";
     }
     return self;
 }
@@ -35,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add)] autorelease];
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Join a new course" style:UIBarButtonItemStyleBordered target:self action:@selector(add)] autorelease];
     
     //TODO - Load the data async
     
