@@ -8,13 +8,27 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "studdybuddy/studdybuddyAppDelegate.m"
-         timestampString = "339211723.626825"
+         filePath = "studdybuddy/View Controllers/ProfileViewController.m"
+         timestampString = "339219695.777637"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "131"
-         endingLineNumber = "131"
-         landmarkName = "-setupUI"
+         startingLineNumber = "95"
+         endingLineNumber = "95"
+         landmarkName = "-onInviteButtonUp:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "studdybuddy/View Controllers/BuddiesViewController.m"
+         timestampString = "339220123.061371"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "129"
+         endingLineNumber = "129"
+         landmarkName = "-tableView:titleForHeaderInSection:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

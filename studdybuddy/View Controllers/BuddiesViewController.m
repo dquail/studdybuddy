@@ -81,6 +81,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
    // Return the number of sections.
+
     return 2;
 }
 
@@ -113,7 +114,7 @@
     }
     
     cell.textLabel.text = buddy.name;
-    cell.detailTextLabel.text = buddy.email;
+    cell.detailTextLabel.text = buddy.userDescription;
     //TODO - Use a real image
     NSString *imageName = [NSString stringWithFormat:@"%d.jpg", indexPath.row];
     cell.imageView.image = [UIImage imageNamed:imageName];
@@ -122,8 +123,14 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section==0) {
         return @"My study partners";
-    } else if (section==1) {
-        return @"Other people looking to study";
+    } 
+    else if (section==1) {
+        if ([_buddies count] == 0) {
+            return @"";
+        }
+        else{
+            return @"Other people looking to study";
+        }
     }
     
     return @"";

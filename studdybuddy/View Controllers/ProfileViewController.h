@@ -17,6 +17,7 @@
     UIImageView *_imageView;
     
     UIButton *_inviteButton;
+    UIButton *_uninviteButton;
     User *_user;
     
     BOOL _inviteEnabled;
@@ -28,9 +29,13 @@
 @property (nonatomic, retain) IBOutlet UILabel *emailLabel;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
 @property (nonatomic, retain) IBOutlet UIButton *inviteButton;
+@property (nonatomic, retain) IBOutlet UIButton *uninviteButton;
 
 @property BOOL inviteEnabled;
 
 @property (nonatomic, retain) User * user;
+
+- (IBAction)onInviteButtonUp:(id)sender;
+- (IBAction)onUnInviteButtonUp:(id)sender;
 
 @end

@@ -16,6 +16,8 @@
     NSString *_email;
     //TODO - Use an image url
     UIImage *_image;
+    
+    BOOL isSelf;
 }
 
 @property (nonatomic, retain) NSString *studentId;
@@ -24,6 +26,7 @@
 @property (nonatomic, retain) NSString *userDescription;
 @property (nonatomic, retain) NSString *email;
 @property (nonatomic, retain) UIImage *image;
+@property BOOL isSelf;
 
 - (id) initWithId:(NSString *)studentId andName:(NSString *)name andDescription:(NSString *)description andEmail:(NSString *)email andUniversity:(NSString *)university;
 

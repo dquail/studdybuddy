@@ -112,7 +112,9 @@
                     initWithId:@"1" andName:@"David Quail" andDescription:@"I'm a 4th year computer science student.  I'm looking for a serious study partner, but also one that doesn't take things too seriously.  Beer is good too. "
                     andEmail:@"dquail@hotmail.com" andUniversity:@"University of Regina"]autorelease];
     david.image = [[UIImage imageNamed:@"Me.jpg"] autorelease];
+    david.isSelf = YES;
     profileController.user = david;
+
     UINavigationController *profileNavigationController = [[[UINavigationController alloc]
                                                             initWithRootViewController:profileController] autorelease];
     profileNavigationController.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"Me"
@@ -133,7 +135,7 @@
     UINavigationController *buddiesNavigationController = [[[UINavigationController alloc]
                                                             initWithRootViewController:buddiesController] autorelease];
     buddiesNavigationController.tabBarItem = [[[UITabBarItem alloc] initWithTitle:@"Matches"
-                                                                            image:[UIImage imageNamed:@"icon_buddies    .png"] tag:3] autorelease];     
+                                                                            image:[UIImage imageNamed:@"icon_buddies.png"] tag:3] autorelease];     
     
     //Tab bar
     UITabBarController *tabBarController = [[[UITabBarController alloc] init] autorelease];

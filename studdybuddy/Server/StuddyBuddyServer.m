@@ -34,11 +34,31 @@ StuddyBuddyServer *_server;
 
 - (NSArray *) getClasses{   
     NSArray *classes = [[[NSArray alloc] initWithObjects:
+                         [[[Course alloc] initWithCourseId:@"2" 
+                                                   andName:@"AST101" 
+                                            andDescription:@"Introduction to Astronomy" 
+                                                  andNotes:@""] autorelease],                        
+                         [[[Course alloc] initWithCourseId:@"3" 
+                                                   andName:@"AST200" 
+                                            andDescription:@"Planetary orbits" 
+                                                  andNotes:@""] autorelease],                               
                         [[[Course alloc] initWithCourseId:@"1" 
-                                                  andName:@"CS102" 
-                                           andDescription:@"Computer science for beginners" 
+                                                  andName:@"AST210" 
+                                           andDescription:@"Modern physics in Astronomy" 
                                                  andNotes:@""] autorelease],
-                        [[[Course alloc] initWithCourseId:@"2" 
+                         [[[Course alloc] initWithCourseId:@"2" 
+                                                   andName:@"BIO120" 
+                                            andDescription:@"Introduction to Biology" 
+                                                  andNotes:@""] autorelease],                        
+                         [[[Course alloc] initWithCourseId:@"3" 
+                                                   andName:@"BIO125" 
+                                            andDescription:@"Molecular Life" 
+                                                  andNotes:@""] autorelease],                               
+                         [[[Course alloc] initWithCourseId:@"1" 
+                                                   andName:@"BIO200" 
+                                            andDescription:@"Biology in modern medicine" 
+                                                  andNotes:@""] autorelease],
+                         [[[Course alloc] initWithCourseId:@"2" 
                                                   andName:@"CS324" 
                                            andDescription:@"Algorithms" 
                                                  andNotes:@""] autorelease],                        

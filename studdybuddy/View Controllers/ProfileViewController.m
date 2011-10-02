@@ -17,6 +17,7 @@
 @synthesize imageView = _imageView;
 @synthesize user = _user;
 @synthesize inviteButton = _inviteButton;
+@synthesize uninviteButton = _uninviteButton;
 @synthesize inviteEnabled = _inviteEnabled;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -57,8 +58,16 @@
     
     if (self.inviteEnabled){
         self.inviteButton.hidden = NO;
+        self.uninviteButton.hidden = YES;
+
     }
     else{
+        if (self.user.isSelf){
+            self.uninviteButton.hidden = YES;
+        }
+        else{
+            self.uninviteButton.hidden = NO;
+        }
         self.inviteButton.hidden = YES;
     }
 }
@@ -76,5 +85,20 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)showMessage:(NSString*)message{
+    UIAlertView *alert = [[[UIAlertView alloc] initWithTitle: @"StuddyBuddy" message:message 
+                                                          delegate: self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
+	[alert show];
+}
+
+- (IBAction)onInviteButtonUp:(id)sender{
+    [self showMessage:@"Invitation to partner up has been sent.  They'll just have to accept the request before you're able to communicate"];
+}
+
+- (IBAction)onUnInviteButtonUp:(id)sender{
+    [self showMessage:@"Successfully removed"];
+    self.uninviteButton.hidden = YES;
+    self.inviteButton.hidden = NO;
+}
 
 @end

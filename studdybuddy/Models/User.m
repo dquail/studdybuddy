@@ -15,6 +15,7 @@
 @synthesize email = _email;
 @synthesize image = _image;
 @synthesize userDescription = _description;
+@synthesize isSelf = _isSelf;
 
 - (id) initWithId:(NSString *)studentId andName:(NSString *)name andDescription:(NSString *)description andEmail:(NSString *)email andUniversity:(NSString *)university{
     self = [self init];
